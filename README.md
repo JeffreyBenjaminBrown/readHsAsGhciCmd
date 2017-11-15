@@ -1,8 +1,8 @@
 # What is it?
 
-GHCI offers a :cmd directive that lets you evaluate the contents of a file. It cannot process multi-line expressions unless they are bracketed by (on separate lines) ":{" and ":}".
+GHCI offers a :cmd directive that lets you evaluate the contents of a file. It cannot process multi-line expressions unless they are bracketed by (on separate lines) ":{" and ":}". Adding those brackets by hand is boring, and it confuses the indentation routines in at least some (maybe all?) editors.
 
-This code lets you pass ordinary Haskell-formatted single- and multi-line expressions, without those surrounding brackets, to `:cmd`. Use it on a file like this `:cmd ReadHsAsGhciCmd.main "folder/filename.hs"`.
+readHsAsGhciCmd lets you pass ordinary Haskell-formatted single- and multi-line expressions, without those surrounding brackets, to `:cmd`. Use it on a file like this `:cmd ReadHsAsGhciCmd.main "folder/filename.hs"`.
 
 If you plan on using it a lot, you could make a macro:
 ```
