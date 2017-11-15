@@ -15,6 +15,11 @@ and then call the macro like this:
 (Note that no quotation marks surround the filepath in the macro.)
 
 
+# Known issues
+
+This code assumes "--" indicates a comment. If there was an operator that began with "--", and it was the first thing on a line, the whole line would be ignored.
+
+
 # Where's the commit history?
 
 It's in my [fork of Tidal](https://github.com/JeffreyBenjaminBrown/Tidal/commit/fa99bbb86ff05ed494fd5bb15f1f26b7e27dbcb9).
