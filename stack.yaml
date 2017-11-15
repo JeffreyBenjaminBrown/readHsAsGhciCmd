@@ -1,0 +1,6 @@
+resolver: nightly-2017-11-14
+# resolver: lts-9.13
+
+extra-deps: []
+flags: {}
+extra-package-dbs: []
