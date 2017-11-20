@@ -1,8 +1,8 @@
 module ReadHsAsGhciCmd where
 
-import Control.Applicative
+import Control.Applicative ((<|>), many)
 import Data.Void (Void)
-import Text.Megaparsec
+import Text.Megaparsec (Parsec, ParseError, Token, parse, skipMany, eof, try)
 import Text.Megaparsec.Char (satisfy, string, space, space1, anyChar, tab)
 
 
